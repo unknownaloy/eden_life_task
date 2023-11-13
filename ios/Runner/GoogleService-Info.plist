@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCmwsHDAWFcU9zfbFALxx6pKmawM44iToE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>805374031557</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.edenLifeTask</string>
+	<key>PROJECT_ID</key>
+	<string>eden-life-task-6fffb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eden-life-task-6fffb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:805374031557:ios:54332aba85c2cf49ce62ac</string>
+</dict>
+</plist>

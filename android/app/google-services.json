@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "805374031557",
+    "project_id": "eden-life-task-6fffb",
+    "storage_bucket": "eden-life-task-6fffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805374031557:android:acdbb03e90740527ce62ac",
+        "android_client_info": {
+          "package_name": "com.example.eden_life_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN87oK_sDMfUaf-tTb3I3h3-vPtx8yxE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
