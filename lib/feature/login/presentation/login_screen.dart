@@ -24,7 +24,7 @@ class LoginScreen extends StatelessWidget {
                   textStyle: Theme.of(context).textTheme.displayLarge,
                   fontSize: 48,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFF2d2220),
+                  color: const Color(0xFF0c4c3b),
                 ),
               ),
               const SizedBox(
