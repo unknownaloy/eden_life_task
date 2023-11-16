@@ -47,4 +47,15 @@ class StorageService {
     }
     return null;
   }
+
+  /// Method for deleting stored user on the device
+  Future<void> deleteStoredUser() async {
+    try {
+      await _storage.delete(key: "edenUser");
+    } catch (err) {
+      debugPrint(
+        "StorageService - deleteStoredUser -- Error deleting user from storage -> err = $err",
+      );
+    }
+  }
 }

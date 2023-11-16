@@ -59,7 +59,7 @@ class ProfileScreen extends StatelessWidget {
                     height: 64,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: model.signOut,
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(
                         const Color(0xFFe8d8c9),

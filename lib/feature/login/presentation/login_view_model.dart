@@ -67,4 +67,15 @@ class LoginViewModel extends ChangeNotifier {
       notifyListeners();
     }
   }
+
+  Future<void> signOut() async {
+    try {
+      _edenUser = null;
+      await _storageService.deleteStoredUser();
+    } catch (err) {
+      debugPrint("LoginViewModel - signOut -- err -> $err");
+    } finally {
+      notifyListeners();
+    }
+  }
 }
