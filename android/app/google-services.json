@@ -12,7 +12,20 @@
           "package_name": "com.example.eden_life_task"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "805374031557-j6t8epspmn6vlse9mt02qkl3k0obu7eq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eden_life_task",
+            "certificate_hash": "d22ac6c4e4b9f3c22b8bcfbdd365ec01542c08ac"
+          }
+        },
+        {
+          "client_id": "805374031557-qn2q0849q0uor9umd7il8qh63k255mgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAN87oK_sDMfUaf-tTb3I3h3-vPtx8yxE8"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805374031557-qn2q0849q0uor9umd7il8qh63k255mgr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "805374031557-462ergg5heoobga4pe6htcnlilcm3val.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.edenLifeTask"
+              }
+            }
+          ]
         }
       }
     }

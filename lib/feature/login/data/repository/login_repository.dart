@@ -1,20 +1,33 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:eden_life_task/common/models/eden_user/eden_user.dart';
 import 'package:eden_life_task/utilities/failure.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:http/http.dart' as http;
 
 class LoginRepository {
   /// This method is responsible for fetching my github repos
-  Future<void> testingOne() async {
-    debugPrint("ApiServices - getRepos -- GOT HERE!!!");
+  Future<EdenUser> signInWithGitHub() async {
     try {
-      // TODO: Bikers
+      // Create a new provider
+      GithubAuthProvider githubProvider = GithubAuthProvider();
+
+      final userCredential =
+          await FirebaseAuth.instance.signInWithProvider(githubProvider);
+
+      final user = userCredential.user;
+
+      if (user != null) {
+        return EdenUser(
+          id: user.uid,
+          name: user.displayName,
+          email: user.email,
+          photoUrl: user.photoURL,
+        );
+      } else {
+        throw Failure("Something went wrong");
+      }
     } on SocketException catch (_) {
       throw Failure("No internet connection");
     } on HttpException {

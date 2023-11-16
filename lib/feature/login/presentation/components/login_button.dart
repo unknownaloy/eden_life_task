@@ -6,15 +6,19 @@ class LoginButton extends StatelessWidget {
     super.key,
     required this.trailingIcon,
     required this.buttonText,
+    this.isLoading = false,
+    required this.onPressed,
   });
 
   final Widget trailingIcon;
   final String buttonText;
+  final bool isLoading;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(
           const Color(0xFFe8d8c9),
@@ -42,16 +46,24 @@ class LoginButton extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.center,
-            child: Text(
-              buttonText,
-              textAlign: TextAlign.center,
-              style: GoogleFonts.montserrat(
-                textStyle: Theme.of(context).textTheme.bodyLarge,
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
-              ),
-            ),
+            child: isLoading
+                ? const SizedBox(
+                    height: 24,
+                    width: 24,
+                    child: CircularProgressIndicator.adaptive(
+                      strokeWidth: 2,
+                    ),
+                  )
+                : Text(
+                    buttonText,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.montserrat(
+                      textStyle: Theme.of(context).textTheme.bodyLarge,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.black,
+                    ),
+                  ),
           ),
         ],
       ),

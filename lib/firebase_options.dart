@@ -63,6 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '805374031557',
     projectId: 'eden-life-task-6fffb',
     storageBucket: 'eden-life-task-6fffb.appspot.com',
+    androidClientId: '805374031557-j6t8epspmn6vlse9mt02qkl3k0obu7eq.apps.googleusercontent.com',
+    iosClientId: '805374031557-462ergg5heoobga4pe6htcnlilcm3val.apps.googleusercontent.com',
     iosBundleId: 'com.example.edenLifeTask',
   );
 }
