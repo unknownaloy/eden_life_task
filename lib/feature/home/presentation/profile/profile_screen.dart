@@ -87,7 +87,7 @@ class ProfileScreen extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),

@@ -1,4 +1,5 @@
-import 'package:eden_life_task/feature/home/presentation/screens/profile_screen.dart';
+import 'package:eden_life_task/feature/home/presentation/order/orders_screen.dart';
+import 'package:eden_life_task/feature/home/presentation/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 class EdenHomeScreen extends StatefulWidget {
@@ -14,9 +15,7 @@ class _EdenHomeScreenState extends State<EdenHomeScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = [
-    Container(
-      color: Colors.purple,
-    ),
+    const OrdersScreen(),
     const ProfileScreen(),
   ];
 
