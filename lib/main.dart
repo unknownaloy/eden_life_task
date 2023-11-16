@@ -1,5 +1,6 @@
 import 'package:eden_life_task/common/service/ably_service.dart';
 import 'package:eden_life_task/common/service/storage_service.dart';
+import 'package:eden_life_task/feature/home/presentation/eden_home_screen.dart';
 import 'package:eden_life_task/feature/login/data/repository/login_repository.dart';
 import 'package:eden_life_task/feature/login/presentation/login_screen.dart';
 import 'package:eden_life_task/feature/login/presentation/login_view_model.dart';
@@ -45,11 +46,7 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         home: model.edenUser != null
-            ? Scaffold(
-                body: Container(
-                  color: Colors.orange,
-                ),
-              )
+            ? const EdenHomeScreen()
             : const LoginScreen(),
       ),
     );

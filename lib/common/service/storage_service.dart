@@ -33,6 +33,8 @@ class StorageService {
     try {
       final value = await _storage.read(key: "edenUser");
 
+      debugPrint("StorageService - getEdenUser -- value -> $value");
+
       if (value != null) {
         final userJSON = json.decode(value) as JSON;
 
