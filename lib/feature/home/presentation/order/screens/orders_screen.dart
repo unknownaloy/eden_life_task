@@ -1,5 +1,6 @@
 import 'package:eden_life_task/feature/home/presentation/order/order_view_model.dart';
 import 'package:eden_life_task/feature/home/presentation/order/screens/track_order_screen.dart';
+import 'package:eden_life_task/utilities/date_formatter.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -80,6 +81,19 @@ class OrdersScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+
+                    const SizedBox(height: 16,),
+
+                    RichText(
+                      text: TextSpan(
+                        text: 'Time: ',
+                        style: const TextStyle(fontSize: 16, color: Colors.white,),
+                        children: <TextSpan>[
+                          TextSpan(text: DateFormatter.formatDateToTime(model.order.date), style: const TextStyle(fontWeight: FontWeight.bold,),),
+                        ],
+                      ),
+                    ),
+
                     const SizedBox(
                       height: 40,
                     ),
