@@ -1,16 +1,26 @@
-# eden_life_task
+# EDEN LIFE TASK
 
-A new Flutter project.
+An app for Eden Life Task with include sign-in-with Google and GitHub, realtime data integration with Ably.
 
-## Getting Started
+## Prerequisites
+- Create an account on [Ably](https://ably.com/)
+- Generate your API KEY on the dashboard
+- On the ***console*** add a new channel called ***eden-order***
 
-This project is a starting point for a Flutter application.
+## Emitting of data from Ably
+Emitting of data should take the format of ***Event name*** and ***Message data*** respectively
+- **Event name:** ORDER PLACED | **Message data:** "ADD_MESSAGE_HERE"
+- **Event name:** ORDER ACCEPTED | **Message data:** "ADD_MESSAGE_HERE"
+- **Event name:** ORDER PICK UP IN PROGRESS | **Message data:** "ADD_MESSAGE_HERE"
+- **Event name:** ORDER ON THE WAY TO CUSTOMER | **Message data:** "ADD_MESSAGE_HERE"
+- **Event name:** ORDER ARRIVED | **Message data:** "ADD_MESSAGE_HERE"
+- **Event name:** ORDER DELIVERED | **Message data:** "ADD_MESSAGE_HERE"
 
-A few resources to get you started if this is your first Flutter project:
+## Project Configuration
+- Create a folder in the PROJECT_NAME/lib/config/
+- Create a dart file ***ably_key.dart***
+- Inside the ***ably_key.dart*** paste your API key ***const String ablyKey = PASTE YOUR API KEY HERE***
+- Run ***flutter pub get*** to get dependencies
+- Run ***flutter run*** to build the project on your emulator
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<a href="https://drive.google.com/uc?export=view&id=1IQRRIt3AHbZjIRiHvyLVYXYrDxPUx8cY"><img alt="Instruction screenshot" src="https://drive.google.com/uc?export=view&id=1IQRRIt3AHbZjIRiHvyLVYXYrDxPUx8cY" style="width: 640px" title="Click to enlarge picture" />

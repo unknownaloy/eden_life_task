@@ -1,3 +1,4 @@
+import 'package:eden_life_task/config/ably_key.dart';
 import 'package:eden_life_task/feature/home/presentation/order/data/enum/order_status.dart';
 import 'package:eden_life_task/feature/home/presentation/order/data/model/order_model/order_model.dart';
 import 'package:flutter/cupertino.dart';
@@ -26,7 +27,7 @@ class OrderViewModel extends ChangeNotifier {
   Future<void> initializeAbly() async {
     // Create an instance of ClientOptions with Ably key
     final clientOptions = ably.ClientOptions(
-      key: '1NXZvQ.OdX4Ig:j1uTkyaFn777lzj6zlFUtsgvG35x_wasFm7I3wpgTdg',
+      key: ablyKey,
     );
 
     try {
