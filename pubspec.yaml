@@ -32,7 +32,6 @@ dependencies:
   ably_flutter: ^1.2.23
 
 #  Utilities
-  http: ^1.1.0
   get_it: ^7.6.4
   google_sign_in: ^6.1.6
   freezed_annotation: ^2.4.1

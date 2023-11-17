@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  Consumer<LoginViewModel>(
+    return Consumer<LoginViewModel>(
       builder: (_, model, __) => MaterialApp(
         title: 'Eden Life Task',
         debugShowCheckedModeBanner: false,

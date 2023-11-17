@@ -2,6 +2,8 @@
 
 An app for Eden Life Task with include sign-in-with Google and GitHub, realtime data integration with Ably.
 
+[Download EdenLife Task for Android](https://github.com/unknownaloy/eden_life_task/raw/master/apk/eden_life_task.apk)
+
 ## Prerequisites
 - Create an account on [Ably](https://ably.com/)
 - Generate your API KEY on the dashboard

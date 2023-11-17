@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:ably_flutter/ably_flutter.dart' as ably;
 
 class OrderViewModel extends ChangeNotifier {
+  // Dummy data
   final _order = OrderModel(
     id: '123456789',
     date: DateTime.now(),
@@ -35,8 +36,7 @@ class OrderViewModel extends ChangeNotifier {
       _realtimeInstance = ably.Realtime(options: clientOptions);
 
       _realtimeInstance?.connection
-          .on(ably.ConnectionEvent
-              .connected) // Any type of `ConnectionEvent` can be specified
+          .on(ably.ConnectionEvent.connected)
           .listen((ably.ConnectionStateChange stateChange) async {
         // Connect the to the eden-order channel
         _chatChannel = _realtimeInstance?.channels.get("eden-order");
