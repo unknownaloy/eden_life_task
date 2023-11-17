@@ -31,6 +31,7 @@ class LoginViewModel extends ChangeNotifier {
   Future<void> getEdenUser() async {
     try {
       _edenUser = await _storageService.getEdenUser();
+      notifyListeners();
     } catch (err) {
       debugPrint("Something went wrong");
     }

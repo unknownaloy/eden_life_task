@@ -1,4 +1,4 @@
-import 'package:eden_life_task/feature/home/presentation/order/orders_screen.dart';
+import 'package:eden_life_task/feature/home/presentation/order/screens/orders_screen.dart';
 import 'package:eden_life_task/feature/home/presentation/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 

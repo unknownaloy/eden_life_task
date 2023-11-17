@@ -14,8 +14,6 @@ class AblyService {
     try {
       // Use ClientOptions to create Realtime or REST instance
       realtimeInstance = ably.Realtime(options: clientOptions);
-      // ably.Realtime realtime = ably.Realtime(options: clientOptions);
-      // ably.Rest rest = ably.Rest(options: clientOptions);
 
       realtimeInstance?.connection
           .on(ably.ConnectionEvent

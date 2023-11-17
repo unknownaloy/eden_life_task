@@ -1,4 +1,3 @@
-import 'package:eden_life_task/common/service/ably_service.dart';
 import 'package:eden_life_task/common/service/storage_service.dart';
 import 'package:eden_life_task/feature/home/presentation/eden_home_screen.dart';
 import 'package:eden_life_task/feature/home/presentation/order/order_view_model.dart';
@@ -36,27 +35,19 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (_) => OrderViewModel(),
-          child: const MyApp(),
-        ),
-      ],
-      child: Consumer<LoginViewModel>(
-        builder: (_, model, __) => MaterialApp(
-          title: 'Eden Life Task',
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color(0xFF08392c),
-            ),
-            useMaterial3: true,
+    return  Consumer<LoginViewModel>(
+      builder: (_, model, __) => MaterialApp(
+        title: 'Eden Life Task',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color(0xFF08392c),
           ),
-          home: model.edenUser != null
-              ? const EdenHomeScreen()
-              : const LoginScreen(),
+          useMaterial3: true,
         ),
+        home: model.edenUser != null
+            ? const EdenHomeScreen()
+            : const LoginScreen(),
       ),
     );
   }
